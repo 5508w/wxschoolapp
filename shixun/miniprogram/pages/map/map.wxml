@@ -1,0 +1,11 @@
+<map 
+  id="ditu" 
+  style="width: 710rpx; height: 350px;" 
+  latitude="{{latitude}}" 
+  longitude="{{longitude}}" 
+  markers="{{markers}}" 
+  show-location>
+</map>
+<button bindtap="moveToLocation"  type="primary">将地图中心移动到当前定位点</button>
+<button bindtap="includePoints" type="primary">缩放视野展示所有经纬度</button>
+

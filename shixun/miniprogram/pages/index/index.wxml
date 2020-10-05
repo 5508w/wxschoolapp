@@ -1,0 +1,72 @@
+<view class="container">
+  <scroll-view class="scroll-container" upper-threshold="{{sortPanelDist}}" bindscroll="onToTop" scroll-y="true" style="height:calc(100% - 1px)">
+    <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-height">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style="height:{{windowWidth * 0.375}}px !important" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="scroll-container-school">
+      <image style="position:absolute; top:50px; left:20%; background-size:cover;width: 195px;height: 135px; " src="../images/xiaowei.png" />
+
+    </view>
+
+    <text class="scroll-container-text">广东科技学院</text>
+    <text class="jianjie-left-text">建校时间：2003年</text>
+    <text class="jianjie-right-text">{{text0}}</text>
+    <text class="jianjie-left-text">校院类型：综合类 </text>
+    <text class="jianjie-right-text">{{text1}}</text>
+    <view style=" border:3px solid #f1eeec;background-color: #f1eeec;" />
+    <view class="category-panel">
+      <view class="category-item" bindtap="gotoincon0">
+        <image class="category-item-image" src="../images/xuexiaogaikuang.png" />
+        <text class="category-item-text">学校概况</text>
+      </view>
+      <view class="category-item" bindtap="gotonews">
+        <image class="category-item-image" src="../images/xinwen.png" />
+        <text class="category-item-text">学校新闻</text>
+      </view>
+      <view class="category-item" bindtap="gotoincon2">
+        <image class="category-item-image" src="../images/liebiao.png" />
+        <text class="category-item-text">招生信息</text>
+      </view>
+      <view class="category-item" bindtap="gotovideo">
+        <image class="category-item-image" src="../images/shipin.png" />
+        <text class="category-item-text">校园视频</text>
+      </view>
+    </view>
+    <view class="category-panel">
+      <view class="category-item" bindtap="gotomap">
+        <image class=" category-item-image " src="../images/meijing.png " />
+        <text class="category-item-text ">地图导航</text>
+      </view>
+      <view class="category-item "  bindtap="gotoimage">
+        <image class="category-item-image " src="../images/fengguang.png " />
+        <text class="category-item-text ">校园风光</text>
+      </view>
+      <view class="category-item "  bindtap="gotomessage">
+        <image class="category-item-image " src="../images/liuyan.png " />
+        <text class="category-item-text ">在线留言</text>
+      </view>
+      <view class="category-item " bindtap="gotoquestion">
+        <image class="category-item-image " src="../images/wenti.png " />
+        <text class="category-item-text ">常见问题</text>
+      </view>
+      <image style="position:absolute; top:50px; left:-56px; background-size:cover;width: 195px;height: 135px; " src="../images/33.gif " />
+    </view>
+  </scroll-view>
+  <!--功能模板 begin-->
+  <template name="itmes ">
+    <navigator url="../../pages/detail/detail?detail_id={{_id}} " hover-class="navigator-hover ">
+      <view class="imgs ">
+        <image src="{{img}} " class="in-img " background-size="cover " model="scaleToFill "></image>
+      </view>
+      <view class="infos ">
+        <view class="title ">{{title}}</view>
+        <view class="date ">{{cTime}}</view>
+      </view>
+    </navigator>
+    <!--功能模板 end-->
+  </template>
+</view>

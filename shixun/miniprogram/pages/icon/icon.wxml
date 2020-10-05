@@ -1,0 +1,7 @@
+<view class="warp" wx:for="{{ne}}">
+  <view>
+    <view class="title">{{item.title}}</view>
+    <view class="cTime">{{item.time}}</view>
+    <view class="content">{{item.content}}</view>
+  </view>
+</view>

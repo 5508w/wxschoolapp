@@ -1,0 +1,72 @@
+<view class="container">
+  <!-- <template is="head" data="{{title: 'editor'}}"/> -->
+
+  <view class="page-body">
+
+    <view class='wrapper'>
+      <view class="contentinfo">
+        姓名：
+      </view>
+      <view class='in'>
+        <input bindinput='name' placeholder="请填写你的姓名" focus="{{focus}}" />
+      </view>
+
+      <view class="contentinfo">
+        性别：
+      </view>
+      <view class='in '>
+        <radio-group class="radio-group" bindchange="radioSex">
+          <label>
+            <radio value="男" />男</label>
+          <label>
+            <radio value="女" />女</label>
+        </radio-group>
+      </view>
+
+      <view class="contentinfo">
+        手机号码：
+      </view>
+      <view class='in'>
+        <input bindinput='phone' placeholder="请填写你的手机号码" focus="{{focus}}" />
+      </view>
+
+      <view class="contentinfo">
+        科类：
+      </view>
+      <view class='in '>
+        <radio-group class="radio-group" bindchange="radioMajor">
+          <label>
+            <checkbox value="文科" />文科</label>
+          <label>
+            <checkbox value="理科" />理科</label>
+          <label>
+            <checkbox value="艺术" />艺术</label>
+          <label>
+            <checkbox value="体育" />体育</label>
+        </radio-group>
+      </view>
+
+      <view class="contentinfo">
+        拟报专业：
+      </view>
+      <view class='in'>
+        <input bindinput='what' placeholder="请填写你的拟报专业" focus="{{focus}}" />
+      </view>
+
+      <view class="contentinfo">
+        就读学校：
+      </view>
+      <view class='in'>
+        <input bindinput='where' placeholder="请填写你的就读学校" focus="{{focus}}" />
+      </view>
+
+      <view class="contentinfo">
+        留言：
+      </view>
+      <view class='in'>
+        <textarea bindinput="say" maxlength="250" placeholder="120字以内" focus="{{focus}}" />
+      </view>
+      <button type="primary" bindtap='submit'>提交</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="all">
+  <view class="top">
+    <view class="avatarUrl">
+      <image src="{{userInfo.avatarUrl}}" style="width:70px;height:70px;"></image>
+    </view>
+    <view class="nickName">
+      {{userInfo.nickName}}
+    </view>
+  </view>
+
+  <view bindtap="navigateTolookForm" class="tableviewcell">
+    <image src="../images/baoming.png" />
+    <text>报名信息</text>
+  </view>
+  <view bindtap="navigateToMessage" class="tableviewcell">
+    <image src="../images/lianxikefu.png" />
+    <text>联系客服</text>
+  </view>
+  <view bindtap="setup" class="tableviewcell">
+    <image src="../images/kejian.png" />
+    <text>通用设置</text>
+  </view>
+
+</view>

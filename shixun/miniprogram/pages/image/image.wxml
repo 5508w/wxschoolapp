@@ -1,0 +1,43 @@
+<view class="scroll_box" >    
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list">
+          <image src="../images/1.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>毕业生风采</view>
+      </view>
+      <view class="item_list">
+          <image src="../images/2.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>成考毕业生合影留念</view>
+      </view>
+      <view class="item_list">
+          <image src="../images/3.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>成考毕业生合影留念</view>
+      </view>
+    </scroll-view>
+    <text class="bigtitle">毕业</text>
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list">
+          <image src="../images/4.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>自考学生黄埔军校一日游</view>
+      </view>
+      <view class="item_list">
+          <image src="../images/5.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>广东科技学院新生军训</view>
+      </view>
+      <view class="item_list">
+          <image src="../images/6.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>南博职业技术学校校园会</view>
+      </view>
+    </scroll-view>
+    <text class="bigtitle">校园活动</text>
+    <scroll-view class="scroll-view_x" scroll-x style="width: auto;overflow:hidden;">
+      <view class="item_list">
+          <image src="../images/7.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>考研辅导班公开讲座</view>
+      </view>
+      <view class="item_list">
+          <image src="../images/8.jpg" class="item_book_img" mode="widthFix"></image>
+          <view class='title'>学生上课情景</view>
+      </view>
+    </scroll-view>
+    <text class="bigtitle">教学</text>
+</view>

@@ -1,0 +1,9 @@
+<view  wx:for="{{ne}}">
+    <view class="tableviewcell">{{item.name}}</view>
+    <view class="tableviewcell">{{item.sex}}</view>
+    <view class="tableviewcell">{{item.phone}}</view>
+    <view class="tableviewcell">{{item.major}}</view>
+    <view class="tableviewcell">{{item.what}}</view>
+    <view class="tableviewcell">{{item.where}}</view>
+    <view class="tableviewcell">{{item.say}}</view>
+</view>
